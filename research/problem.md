@@ -1,11 +1,11 @@
 # Problem and Urgency for our Project
 
-## 1. edmonton_waste_2022.csv: https://data.edmonton.ca/stories/s/Residential-Waste-Material-Movement-at-EWMC/66wa-it35/
+## 1. edmonton_waste_2022.csv (https://data.edmonton.ca/stories/s/Residential-Waste-Material-Movement-at-EWMC/66wa-it35/)
 ![alt text](yeg_waste_map.png "Title")
 - The purpose of this dataset is to show the residential collected waste processed at the Edmonton Waste Management Centre (EWMC) and regional processors (i.e. recyclables and organics).
 
 
-## 2. ECCC 2022: https://www.canada.ca/en/environment-climate-change/services/environmental-indicators/solid-waste-diversion-disposal.html
+## 2. ECCC 2022 (https://www.canada.ca/en/environment-climate-change/services/environmental-indicators/solid-waste-diversion-disposal.html)
 
 In 2022, Canada disposed of 26.6 million tonnes of waste, the highest amount ever recorded. This was a 1.91% increase from 2020. 
 
