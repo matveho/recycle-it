@@ -5,85 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="122e18bd-8447-4882-a0f5-d81793afd857" name="Changes" comment="Uppload">
-      <change afterPath="$PROJECT_DIR$/app/fonts/MontserratAlt1-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/MontserratAlt1-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/MontserratAlt1-ExtraBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/MontserratAlt1-ExtraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/MontserratAlt1-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/MontserratAlt1-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/MontserratAlt1-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/MontserratAlt1-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts/MontserratAlt1-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/Banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/Icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon-96x96.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/MontserratAlt1-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/MontserratAlt1-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/MontserratAlt1-ExtraBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/MontserratAlt1-ExtraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/MontserratAlt1-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/MontserratAlt1-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/MontserratAlt1-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/MontserratAlt1-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/MontserratAlt1-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/web-app-manifest-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/web-app-manifest-512x512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/[redirect]/page.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/About.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/JoinUs.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/NeonAnimation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/MainContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Projects.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/MainContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/MainContent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prototyping/Hero-old.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prototyping/Hero.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prototyping/Logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prototyping/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/android-chrome-192x192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/android-chrome-512x512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/apple-touch-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/Hero.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Hero.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/Hero.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/Logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/RoboArm.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/RoboArm2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/Slug.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/SmallPID.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/projects/AR Glasses.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/projects/AR.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/projects/ElectronicsProject.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/projects/FRC.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/projects/FRC2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/projects/Learning.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/projects/Learning2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/projects/RoboCup.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/projects/RoboCup2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/tempabout.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/templates/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/templates/10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/templates/11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/templates/12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/templates/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/templates/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/templates/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/templates/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/templates/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/templates/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/templates/8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/templates/9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/site.webmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/public/site.webmanifest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +33,7 @@
         <option value="matvey.okoneshnikov@gmail.com" />
       </list>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -116,12 +42,12 @@
     &quot;assignee&quot;: &quot;matveho&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/matveho/uara-nextjs.git&quot;,
-    &quot;accountId&quot;: &quot;9155b09e-3227-4f52-8053-406b1dbde28e&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/matveho/recycle-it.git",
+    "accountId": "9155b09e-3227-4f52-8053-406b1dbde28e"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -133,32 +59,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.dev JavaScript.executor": "Debug",
-    "JavaScript Debug.index.html (1).executor": "Run",
-    "JavaScript Debug.index.html.executor": "Run",
-    "JavaScript Debug.test.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/School/HackED 2025/recycle-it/frontend/app",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "npm.run dev.executor": "Run",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
-    "ts.external.directory.path": "C:\\School\\HackED 2025\\recycle-it\\frontend\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.dev JavaScript.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.index.html (1).executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.test.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/School/HackED 2025/recycle-it/frontend/app&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.run dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\School\\HackED 2025\\recycle-it\\frontend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\School\HackED 2025\recycle-it\frontend\app" />
@@ -228,6 +154,7 @@
       <workItem from="1738560948043" duration="426000" />
       <workItem from="1739680702664" duration="625000" />
       <workItem from="1739683236173" duration="2869000" />
+      <workItem from="1739740159368" duration="1428000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup">
       <option name="closed" value="true" />

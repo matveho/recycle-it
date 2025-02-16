@@ -13,6 +13,7 @@
     "@tensorflow/tfjs": "^4.22.0",
     "@types/lodash": "^4.17.14",
     "@vercel/analytics": "^1.4.1",
+    "axios": "^1.7.9",
     "framer-motion": "^11.18.1",
     "lodash": "^4.17.21",
     "next": "15.1.4",
