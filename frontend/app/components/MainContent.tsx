@@ -57,7 +57,7 @@ const MainContent: React.FC = () => {
             formData.append("image", blob, "image.jpg");
 
             axios
-                .post("https://38.40.107.135:8080/upload", formData, {
+                .post("https://api.uara.ca:8080/upload", formData, {
                     headers: { "Content-Type": "multipart/form-data" },
                 })
                 .then((response) => {
