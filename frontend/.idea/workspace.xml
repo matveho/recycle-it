@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="122e18bd-8447-4882-a0f5-d81793afd857" name="Changes" comment="Uppload">
+      <change afterPath="$PROJECT_DIR$/app/fonts/MontserratAlt1-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/MontserratAlt1-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/MontserratAlt1-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/MontserratAlt1-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/MontserratAlt1-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/MontserratAlt1-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/MontserratAlt1-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/MontserratAlt1-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/fonts/MontserratAlt1-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon-96x96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/MontserratAlt1-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/MontserratAlt1-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/MontserratAlt1-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/MontserratAlt1-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/MontserratAlt1-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/MontserratAlt1-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/MontserratAlt1-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/MontserratAlt1-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/MontserratAlt1-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web-app-manifest-192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/web-app-manifest-512x512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/[redirect]/page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/About.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/JoinUs.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/NeonAnimation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/MainContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Projects.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prototyping/Hero-old.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prototyping/Hero.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prototyping/Logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/prototyping/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/android-chrome-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/android-chrome-512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/apple-touch-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Hero.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/Hero.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Hero.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/RoboArm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/RoboArm2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/Slug.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/SmallPID.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/projects/AR Glasses.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/projects/AR.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/projects/ElectronicsProject.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/projects/FRC.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/projects/FRC2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/projects/Learning.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/projects/Learning2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/projects/RoboCup.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/projects/RoboCup2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/tempabout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/templates/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/templates/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/templates/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/templates/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/templates/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/templates/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/templates/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/templates/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/templates/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/templates/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/templates/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/templates/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/site.webmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/public/site.webmanifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="TypeScript JSX File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="matvey.okoneshnikov@gmail.com" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;matveho&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/matveho/uara-nextjs.git&quot;,
+    &quot;accountId&quot;: &quot;9155b09e-3227-4f52-8053-406b1dbde28e&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2rgdisDExLLHv75xGohIaMUwk8k" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.dev JavaScript.executor": "Debug",
+    "JavaScript Debug.index.html (1).executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.test.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/School/HackED 2025/recycle-it/frontend/app",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "npm.run dev.executor": "Run",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
+    "ts.external.directory.path": "C:\\School\\HackED 2025\\recycle-it\\frontend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\School\HackED 2025\recycle-it\frontend\app" />
+      <recent name="C:\School\HackED 2025\recycle-it\frontend\public\assets" />
+      <recent name="C:\Users\Mo\WebstormProjects\uara-nextjs\public" />
+      <recent name="C:\Users\Mo\WebstormProjects\uara-nextjs\public\assets" />
+      <recent name="C:\Users\Mo\WebstormProjects\uara-nextjs\public\assets\projects" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\School\HackED 2025\recycle-it\frontend\public\fonts" />
+      <recent name="C:\School\HackED 2025\recycle-it\frontend\public" />
+      <recent name="C:\School\HackED 2025\recycle-it\frontend\public\assets" />
+      <recent name="C:\Users\Mo\WebstormProjects\uara-nextjs\app" />
+      <recent name="C:\Users\Mo\WebstormProjects\uara-nextjs\public\assets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="dev JavaScript" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <EXTENSION ID="com.intellij.lang.javascript.buildTools.npm.rc.StartBrowserRunConfigurationExtension">
+        <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" start="true" with-js-debugger="true" url="http://localhost:3000" />
+      </EXTENSION>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.dev JavaScript" />
+      <item itemvalue="npm.dev" />
+    </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.222" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="122e18bd-8447-4882-a0f5-d81793afd857" name="Changes" comment="" />
+      <created>1736984781670</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736984781670</updated>
+      <workItem from="1736984782793" duration="1192000" />
+      <workItem from="1736986010518" duration="841000" />
+      <workItem from="1736986876656" duration="15099000" />
+      <workItem from="1737232479229" duration="28804000" />
+      <workItem from="1737407116317" duration="19531000" />
+      <workItem from="1737427280340" duration="196000" />
+      <workItem from="1737427558808" duration="610000" />
+      <workItem from="1737429581974" duration="174000" />
+      <workItem from="1737429912772" duration="209000" />
+      <workItem from="1737786251398" duration="2651000" />
+      <workItem from="1738557493394" duration="837000" />
+      <workItem from="1738558471706" duration="2104000" />
+      <workItem from="1738560633173" duration="266000" />
+      <workItem from="1738560948043" duration="426000" />
+      <workItem from="1739680702664" duration="625000" />
+      <workItem from="1739683236173" duration="2869000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial setup">
+      <option name="closed" value="true" />
+      <created>1736986590723</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736986590723</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add header and sections">
+      <option name="closed" value="true" />
+      <created>1737010154249</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737010154249</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add designs">
+      <option name="closed" value="true" />
+      <created>1737010253757</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737010253757</updated>
+    </task>
+    <task id="LOCAL-00004" summary="oops I built the site without committing for two days">
+      <option name="closed" value="true" />
+      <created>1737333359894</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737333359894</updated>
+    </task>
+    <task id="LOCAL-00005" summary="refactor to components&#10;fix mobile compatability issues&#10;add on-view animations">
+      <option name="closed" value="true" />
+      <created>1737412933880</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1737412933880</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add &quot;Find Out More&quot; button to Projects">
+      <option name="closed" value="true" />
+      <created>1737416004237</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1737416004237</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add parallax to hero&#10;Fix import">
+      <option name="closed" value="true" />
+      <created>1737417653782</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737417653782</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fix import, again">
+      <option name="closed" value="true" />
+      <created>1737418305303</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1737418305303</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Complete parallax">
+      <option name="closed" value="true" />
+      <created>1737422083921</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1737422083921</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Write projects content&#10;Add social media to footer&#10;Add geo-checking for join-us">
+      <option name="closed" value="true" />
+      <created>1737426680669</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1737426680669</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add openGraph metadata">
+      <option name="closed" value="true" />
+      <created>1737427418345</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1737427418345</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Change opengraph image type">
+      <option name="closed" value="true" />
+      <created>1737427612285</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1737427612285</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Update static hero svg">
+      <option name="closed" value="true" />
+      <created>1737429731146</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1737429731147</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Changed static hero to png (to avoid dealing with font)">
+      <option name="closed" value="true" />
+      <created>1737429974197</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1737429974197</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Update README.md">
+      <option name="closed" value="true" />
+      <created>1737786662964</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1737786662964</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Update join link, add redirect functionality">
+      <option name="closed" value="true" />
+      <created>1738558328666</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1738558328666</updated>
+    </task>
+    <task id="LOCAL-00017" summary="rick roll">
+      <option name="closed" value="true" />
+      <created>1738558487461</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1738558487461</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Improve SEO:&#10; - add sitemap&#10; - add metadata&#10; - add robots.txt&#10; &#10; Changed scaling for project modal">
+      <option name="closed" value="true" />
+      <created>1738560584993</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1738560584993</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fix eslint errors">
+      <option name="closed" value="true" />
+      <created>1738560702803</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1738560702803</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Add Vercel Analytics">
+      <option name="closed" value="true" />
+      <created>1738560882787</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1738560882787</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Add flag">
+      <option name="closed" value="true" />
+      <created>1738561297208</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1738561297208</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Minor sitemap error">
+      <option name="closed" value="true" />
+      <created>1738561339440</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1738561339440</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Project Default" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="oops" />
+    <MESSAGE value="retry" />
+    <MESSAGE value="Initial setup" />
+    <MESSAGE value="Add header and sections" />
+    <MESSAGE value="Add designs" />
+    <MESSAGE value="oops I built the site without committing for two days" />
+    <MESSAGE value="refactor to components&#10;fix mobile compatability issues&#10;add on-view animations" />
+    <MESSAGE value="Add &quot;Find Out More&quot; button to Projects" />
+    <MESSAGE value="Add parallax to hero&#10;Fix import" />
+    <MESSAGE value="Fix import, again" />
+    <MESSAGE value="Complete parallax" />
+    <MESSAGE value="Write projects content&#10;Add social media to footer&#10;Add geo-checking for join-us" />
+    <MESSAGE value="Add openGraph metadata" />
+    <MESSAGE value="Change opengraph image type" />
+    <MESSAGE value="Update static hero svg" />
+    <MESSAGE value="Changed static hero to png (to avoid dealing with font)" />
+    <MESSAGE value="Update README.md" />
+    <MESSAGE value="Update join link, add redirect functionality" />
+    <MESSAGE value="rick roll" />
+    <MESSAGE value="Improve SEO:&#10; - add sitemap&#10; - add metadata&#10; - add robots.txt&#10; &#10; Changed scaling for project modal" />
+    <MESSAGE value="Fix eslint errors" />
+    <MESSAGE value="Add Vercel Analytics" />
+    <MESSAGE value="Add flag" />
+    <MESSAGE value="Minor sitemap error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor sitemap error" />
+  </component>
+</project>

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'MontserratAlt1';
+  src: url('/fonts/MontserratAlt1-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratAlt1';
+  src: url('./fonts/MontserratAlt1-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratAlt1';
+  src: url('./fonts/MontserratAlt1-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratAlt1';
+  src: url('./fonts/MontserratAlt1-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratAlt1';
+  src: url('./fonts/MontserratAlt1-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratAlt1';
+  src: url('./fonts/MontserratAlt1-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratAlt1';
+  src: url('./fonts/MontserratAlt1-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratAlt1';
+  src: url('./fonts/MontserratAlt1-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MontserratAlt1';
+  src: url('./fonts/MontserratAlt1-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-weight: 400; /* Default font-weight */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-weight: 400;
+}
+
+/* main page */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
