@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="122e18bd-8447-4882-a0f5-d81793afd857" name="Changes" comment="Uppload">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="122e18bd-8447-4882-a0f5-d81793afd857" name="Changes" comment="API Beta">
       <change beforePath="$PROJECT_DIR$/app/components/MainContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/MainContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +150,7 @@
       <workItem from="1738560948043" duration="426000" />
       <workItem from="1739680702664" duration="625000" />
       <workItem from="1739683236173" duration="2869000" />
-      <workItem from="1739740159368" duration="1428000" />
+      <workItem from="1739740159368" duration="1811000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup">
       <option name="closed" value="true" />
@@ -332,7 +328,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738561339440</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="API Beta">
+      <option name="closed" value="true" />
+      <created>1739741633719</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1739741633719</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,6 +381,7 @@
     <MESSAGE value="Add Vercel Analytics" />
     <MESSAGE value="Add flag" />
     <MESSAGE value="Minor sitemap error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor sitemap error" />
+    <MESSAGE value="API Beta" />
+    <option name="LAST_COMMIT_MESSAGE" value="API Beta" />
   </component>
 </project>
