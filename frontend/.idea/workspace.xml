@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="122e18bd-8447-4882-a0f5-d81793afd857" name="Changes" comment="API Beta">
+    <list default="true" id="122e18bd-8447-4882-a0f5-d81793afd857" name="Changes" comment="Update to new domain">
       <change beforePath="$PROJECT_DIR$/app/components/MainContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/MainContent.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +29,7 @@
         <option value="matvey.okoneshnikov@gmail.com" />
       </list>
     </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="RESET_MODE" value="HARD" />
   </component>
@@ -150,7 +151,7 @@
       <workItem from="1738560948043" duration="426000" />
       <workItem from="1739680702664" duration="625000" />
       <workItem from="1739683236173" duration="2869000" />
-      <workItem from="1739740159368" duration="1811000" />
+      <workItem from="1739740159368" duration="3339000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup">
       <option name="closed" value="true" />
@@ -336,7 +337,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739741633719</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Update to HTTPS">
+      <option name="closed" value="true" />
+      <created>1739742003434</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1739742003434</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Update to new domain">
+      <option name="closed" value="true" />
+      <created>1739743073778</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1739743073778</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,8 +374,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Project Default" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="oops" />
-    <MESSAGE value="retry" />
     <MESSAGE value="Initial setup" />
     <MESSAGE value="Add header and sections" />
     <MESSAGE value="Add designs" />
@@ -382,6 +397,8 @@
     <MESSAGE value="Add flag" />
     <MESSAGE value="Minor sitemap error" />
     <MESSAGE value="API Beta" />
-    <option name="LAST_COMMIT_MESSAGE" value="API Beta" />
+    <MESSAGE value="Update to HTTPS" />
+    <MESSAGE value="Update to new domain" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update to new domain" />
   </component>
 </project>

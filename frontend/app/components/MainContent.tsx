@@ -7,6 +7,7 @@ const MainContent: React.FC = () => {
     const videoRef = useRef<HTMLVideoElement | null>(null);
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
     const [detectedObjects, setDetectedObjects] = useState<string[]>([]);
+    const [detectedExplanation, setDetectedExplanation] = useState<string | null>(null);
     const [loading, setLoading] = useState(false);
     const [showText, setShowText] = useState(false);
 
@@ -52,6 +53,8 @@ const MainContent: React.FC = () => {
 
             setLoading(true);
             setShowText(true);
+            setDetectedExplanation(null);
+            setDetectedObjects([]);
 
             const formData = new FormData();
             formData.append("image", blob, "image.jpg");
@@ -62,22 +65,22 @@ const MainContent: React.FC = () => {
                 })
                 .then((response) => {
                     console.log("Full Response:", response.data); // Debugging
-                    console.log("Objects Detected:", response.data.objects); // Debugging
 
-                    if (response.data && Array.isArray(response.data.objects)) {
+                    if (response.data.description) {
+                        setDetectedExplanation(response.data.description);
+                    }
+
+                    if (response.data.objects && Array.isArray(response.data.objects)) {
                         setDetectedObjects(response.data.objects);
-                    } else {
-                        console.error("Invalid response format:", response.data);
-                        setDetectedObjects(["Error: Invalid response"]);
                     }
                 })
                 .catch((error) => {
                     console.error("Error uploading image:", error);
-                    setDetectedObjects(["Error: Failed to fetch"]);
+                    setDetectedExplanation("Error: Failed to fetch");
                 })
                 .finally(() => {
                     setLoading(false);
-                    setTimeout(() => setShowText(false), 2000);
+                    setTimeout(() => setShowText(false), 3000);
                 });
         }, "image/jpeg");
     };
@@ -151,7 +154,13 @@ const MainContent: React.FC = () => {
                     className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white text-5xl font-bold bg-black bg-opacity-60 px-8 py-4 rounded-lg transition-opacity duration-1000`}
                     style={{ zIndex: 10 }}
                 >
-                    {loading ? "Loading..." : detectedObjects.join(", ")}
+                    {loading ? "Loading..." : detectedExplanation}
+
+                    {detectedObjects.length > 0 && (
+                        <div className="text-3xl mt-4">
+                            Objects: {detectedObjects.join(", ")}
+                        </div>
+                    )}
                 </div>
             )}
         </section>
