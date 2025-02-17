@@ -82,7 +82,7 @@ const MainContent: React.FC = () => {
         const startCamera = async () => {
             try {
                 const stream = await navigator.mediaDevices.getUserMedia({
-                    video: { facingMode: "user", width: 1280, height: 720 },
+                    video: { facingMode: "environment", width: 1280, height: 720 }, // Use back camera
                 });
 
                 if (videoRef.current) {
@@ -95,15 +95,21 @@ const MainContent: React.FC = () => {
 
         startCamera();
 
-        const handleKeyDown = (event: KeyboardEvent) => {
-            if (event.code === "Space" && !loading && !showCountdown) {
+        const handleAction = () => {
+            if (!loading && !showCountdown) {
                 startCountdown();
             }
         };
 
-        document.addEventListener("keydown", handleKeyDown);
-        return () => document.removeEventListener("keydown", handleKeyDown);
+        document.addEventListener("keydown", (event) => event.code === "Space" && handleAction());
+        document.addEventListener("touchstart", handleAction);
+
+        return () => {
+            document.removeEventListener("keydown", (event) => event.code === "Space" && handleAction());
+            document.removeEventListener("touchstart", handleAction);
+        };
     }, [loading, showCountdown]);
+
 
     const startCountdown = () => {
         setShowGuideBox(true);
