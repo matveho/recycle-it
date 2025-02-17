@@ -1,9 +1,16 @@
 protobuf==3.20.3
 tensorflow
+keras
 numpy
 pandas
 Pillow
 matplotlib
+scipy
 google
 flask
 flask_cors
+opencv-python
+h5py
+imgaug
+pycocotools
+git+https://github.com/matterport/Mask_RCNN.git
