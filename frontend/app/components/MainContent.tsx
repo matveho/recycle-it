@@ -77,12 +77,15 @@ const MainContent: React.FC = () => {
     const [showCountdown, setShowCountdown] = useState(false);
     const [countdown, setCountdown] = useState<number | null>(null);
     const [showGuideBox, setShowGuideBox] = useState(false);
+    const [countdownActive, setCountdownActive] = useState(false); // Track if countdown is running
+
+    const [instructionVisible, setInstructionVisible] = useState(false); // Track instruction visibility
 
     useEffect(() => {
         const startCamera = async () => {
             try {
                 const stream = await navigator.mediaDevices.getUserMedia({
-                    video: { facingMode: "environment", width: 1280, height: 720 }, // Use back camera
+                    video: { facingMode: "environment", width: 1280, height: 720 },
                 });
 
                 if (videoRef.current) {
@@ -96,7 +99,7 @@ const MainContent: React.FC = () => {
         startCamera();
 
         const handleAction = () => {
-            if (!loading && !showCountdown) {
+            if (!loading && !showCountdown && !countdownActive && (!instructionVisible || instruction === "No recognizable object detected.")) {
                 startCountdown();
             }
         };
@@ -104,14 +107,43 @@ const MainContent: React.FC = () => {
         document.addEventListener("keydown", (event) => event.code === "Space" && handleAction());
         document.addEventListener("touchstart", handleAction);
 
+        // Auto-refresh page every 30 minutes
+        const refreshInterval = setInterval(() => {
+            window.location.reload();
+        }, 1800000); // 30 minutes in milliseconds
+
         return () => {
             document.removeEventListener("keydown", (event) => event.code === "Space" && handleAction());
             document.removeEventListener("touchstart", handleAction);
+            clearInterval(refreshInterval);
         };
-    }, [loading, showCountdown]);
+    }, [loading, showCountdown, instructionVisible, instruction]);
+
+    const generateInstruction = (objects: string[]) => {
+        if (objects.length === 0) {
+            setInstruction("No recognizable object detected.");
+            setInstructionVisible(false);
+            return;
+        }
+
+        const mainObject = objects[0];
+        const disposalInstruction = wasteDisposalMap[mainObject] || objects[0];
+        setInstruction(disposalInstruction);
+        setInstructionVisible(true);
+
+        // Fade out instruction after 3 seconds
+        setTimeout(() => {
+            setInstruction(null);
+            setDetectedObjects([]);
+            setInstructionVisible(false);
+        }, 3000);
+    };
 
 
     const startCountdown = () => {
+        if (countdownActive) return; // Prevent multiple countdowns
+
+        setCountdownActive(true);
         setShowGuideBox(true);
         setShowCountdown(true);
         setCountdown(3);
@@ -123,6 +155,7 @@ const MainContent: React.FC = () => {
             if (counter === 0) {
                 clearInterval(interval);
                 setShowCountdown(false);
+                setCountdownActive(false);
                 captureImage();
             }
         }, 500);
@@ -189,17 +222,6 @@ const MainContent: React.FC = () => {
                     setLoading(false);
                 });
         }, "image/jpeg");
-    };
-
-    const generateInstruction = (objects: string[]) => {
-        if (objects.length === 0) {
-            setInstruction("No recognizable object detected.");
-            return;
-        }
-
-        const mainObject = objects[0]; // Highest confidence object
-        const disposalInstruction = wasteDisposalMap[mainObject] || "Unknown item - Please check local guidelines.";
-        setInstruction(disposalInstruction);
     };
 
     useEffect(() => {
