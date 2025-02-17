@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="122e18bd-8447-4882-a0f5-d81793afd857" name="Changes" comment="autosnap every 10s">
+    <list default="true" id="122e18bd-8447-4882-a0f5-d81793afd857" name="Changes" comment="Remove unused">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/MainContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/MainContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +154,7 @@
       <workItem from="1739683236173" duration="2869000" />
       <workItem from="1739740159368" duration="4647000" />
       <workItem from="1739754449309" duration="675000" />
-      <workItem from="1739813000875" duration="1041000" />
+      <workItem from="1739813000875" duration="2597000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup">
       <option name="closed" value="true" />
@@ -373,7 +372,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739754528483</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Rewrite to suit new backend">
+      <option name="closed" value="true" />
+      <created>1739814078388</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1739814078388</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Remove unused">
+      <option name="closed" value="true" />
+      <created>1739814601171</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1739814601171</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,8 +409,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Project Default" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Add designs" />
-    <MESSAGE value="oops I built the site without committing for two days" />
     <MESSAGE value="refactor to components&#10;fix mobile compatability issues&#10;add on-view animations" />
     <MESSAGE value="Add &quot;Find Out More&quot; button to Projects" />
     <MESSAGE value="Add parallax to hero&#10;Fix import" />
@@ -419,6 +432,8 @@
     <MESSAGE value="Update to new domain" />
     <MESSAGE value="Handle description" />
     <MESSAGE value="autosnap every 10s" />
-    <option name="LAST_COMMIT_MESSAGE" value="autosnap every 10s" />
+    <MESSAGE value="Rewrite to suit new backend" />
+    <MESSAGE value="Remove unused" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove unused" />
   </component>
 </project>

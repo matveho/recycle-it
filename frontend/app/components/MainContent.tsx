@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 
-const ENABLE_CROPPING = true;
+const ENABLE_CROPPING = false;
 
 const wasteDisposalMap: Record<string, string> = {
     "Aluminium foil": "Recycle - Clean it before disposing.",
@@ -17,7 +17,7 @@ const wasteDisposalMap: Record<string, string> = {
     "Metal bottle cap": "Recycle - Place in metal recycling bin.",
     "Broken glass": "Garbage - Wrap in newspaper before disposal.",
     "Food Can": "Recycle - Rinse before recycling.",
-    "Aerosol": "Hazardous Waste - Dispose at a special collection point.",
+    "Aerosol": "Recycle - Throw it in the blue bin..",
     "Drink can": "Recycle - Rinse and place in metal recycling.",
     "Toilet tube": "Recycle - Place in paper recycling bin.",
     "Other carton": "Recycle - Flatten before recycling.",
@@ -204,29 +204,48 @@ const MainContent: React.FC = () => {
         if (!context) return;
 
         const drawGuideBox = () => {
+            if (!canvasRef.current) return;
+            const canvas = canvasRef.current;
+            const context = canvas.getContext("2d");
+
+            if (!context) return;
+
             const width = canvas.width;
             const height = canvas.height;
-
-            context.clearRect(0, 0, width, height);
-
             const boxSize = Math.min(width, height) * 0.5;
             const x = (width - boxSize) / 2;
             const y = (height - boxSize) / 2;
-            const borderRadius = 20;
+            const cornerRadius = boxSize * 0.1; // Rounded corners (10% of box size)
 
-            context.lineWidth = 6;
-            context.strokeStyle = "red";
+            // Clear canvas before drawing
+            context.clearRect(0, 0, width, height);
+
+            // Draw a smooth, clean, rounded square
+            context.lineWidth = 4;
+            context.strokeStyle = "rgba(255, 50, 50, 0.9)"; // Softer red
             context.beginPath();
-            context.moveTo(x + borderRadius, y);
-            context.lineTo(x + boxSize - borderRadius, y);
-            context.quadraticCurveTo(x + boxSize, y, x + boxSize, y + borderRadius);
-            context.lineTo(x + boxSize, y + boxSize - borderRadius);
-            context.quadraticCurveTo(x + boxSize, y + boxSize, x + boxSize - borderRadius, y + boxSize);
-            context.lineTo(x + borderRadius, y + boxSize);
-            context.quadraticCurveTo(x, y + boxSize, x, y + boxSize - borderRadius);
-            context.lineTo(x, y + borderRadius);
-            context.quadraticCurveTo(x, y, x + borderRadius, y);
+            context.moveTo(x + cornerRadius, y);
+            context.lineTo(x + boxSize - cornerRadius, y);
+            context.quadraticCurveTo(x + boxSize, y, x + boxSize, y + cornerRadius);
+            context.lineTo(x + boxSize, y + boxSize - cornerRadius);
+            context.quadraticCurveTo(x + boxSize, y + boxSize, x + boxSize - cornerRadius, y + boxSize);
+            context.lineTo(x + cornerRadius, y + boxSize);
+            context.quadraticCurveTo(x, y + boxSize, x, y + boxSize - cornerRadius);
+            context.lineTo(x, y + cornerRadius);
+            context.quadraticCurveTo(x, y, x + cornerRadius, y);
             context.stroke();
+
+            // Optional: Add subtle shadow for better visibility
+            context.shadowColor = "rgba(255, 50, 50, 0.5)";
+            context.shadowBlur = 10;
+            context.stroke();
+
+            // Optional: Add a soft instruction text inside the box
+            context.shadowBlur = 0; // Remove shadow for text
+            context.fillStyle = "rgba(255, 255, 255, 0.8)";
+            context.font = `bold ${Math.floor(boxSize * 0.1)}px Arial`;
+            context.textAlign = "center";
+            context.fillText("Place object here", width / 2, y - 15);
         };
 
         if (showGuideBox) {
