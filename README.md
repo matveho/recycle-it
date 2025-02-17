@@ -1,9 +1,12 @@
 ![Recycle-it Banner](https://github.com/matveho/recycle-it/blob/main/frontend/public/assets/Banner.png)
-# 
+# Recycle-it
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.0%2B-orange)
+![Keras](https://img.shields.io/badge/Keras-2.6%2B-red)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.5%2B-green)
+![Flask](https://img.shields.io/badge/Flask-2.0%2B-yellow)
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-4B-red)
-![AWS](https://img.shields.io/badge/AWS-Cloud-yellow)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
 ## Inspiration
 Imagine a world where recycling is effortless, waste is minimized, and every step brings society closer to a sustainable future. Recycle-it makes this vision a reality. Powered by advanced machine learning, it simplifies waste sorting, reduces contamination, and ensures better recycling accuracy. Whether at home, in a business, or within a community, Recycle-it empowers individuals to make a meaningful difference, driving a greener tomorrow with minimal effort.
