@@ -128,7 +128,7 @@ def model_setup():
     )
     category_index = label_map_util.create_category_index(categories)
 
-    detection_graph = reconstruct(".\models\ssd_mobilenet_v2_taco_2018_03_29.pb")
+    detection_graph = reconstruct(".\ssd_mobilenet\ssd_mobilenet_v2_taco_2018_03_29.pb")
 
     return detection_graph, category_index
 
