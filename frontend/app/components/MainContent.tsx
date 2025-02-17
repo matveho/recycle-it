@@ -204,25 +204,37 @@ const MainContent: React.FC = () => {
         if (!context) return;
 
         const drawGuideBox = () => {
-            if (!canvasRef.current) return;
+            if (!canvasRef.current || !videoRef.current) return;
             const canvas = canvasRef.current;
             const context = canvas.getContext("2d");
 
             if (!context) return;
 
-            const width = canvas.width;
-            const height = canvas.height;
-            const boxSize = Math.min(width, height) * 0.5;
-            const x = (width - boxSize) / 2;
-            const y = (height - boxSize) / 2;
-            const cornerRadius = boxSize * 0.1; // Rounded corners (10% of box size)
+            // Ensure canvas matches video resolution for high quality
+            const video = videoRef.current;
+            const videoWidth = video.videoWidth || video.clientWidth;
+            const videoHeight = video.videoHeight || video.clientHeight;
 
-            // Clear canvas before drawing
-            context.clearRect(0, 0, width, height);
+            canvas.width = videoWidth;
+            canvas.height = videoHeight;
 
-            // Draw a smooth, clean, rounded square
-            context.lineWidth = 4;
-            context.strokeStyle = "rgba(255, 50, 50, 0.9)"; // Softer red
+            // Define square size (50% of the shortest side)
+            const boxSize = Math.min(videoWidth, videoHeight) * 0.5;
+            const x = (videoWidth - boxSize) / 2;
+            const y = (videoHeight - boxSize) / 2;
+            const cornerRadius = boxSize * 0.1; // 10% of box size for rounded corners
+
+            // Clear the canvas
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Enable high-quality rendering
+            context.imageSmoothingEnabled = true;
+
+            // Smooth anti-aliased red outline
+            context.lineWidth = Math.max(4, boxSize * 0.02); // Dynamic thickness
+            context.strokeStyle = "rgba(255, 50, 50, 0.9)";
+
+            // Draw a rounded square
             context.beginPath();
             context.moveTo(x + cornerRadius, y);
             context.lineTo(x + boxSize - cornerRadius, y);
@@ -235,18 +247,21 @@ const MainContent: React.FC = () => {
             context.quadraticCurveTo(x, y, x + cornerRadius, y);
             context.stroke();
 
-            // Optional: Add subtle shadow for better visibility
-            context.shadowColor = "rgba(255, 50, 50, 0.5)";
-            context.shadowBlur = 10;
+            // Optional: Soft drop shadow for better visibility
+            context.shadowColor = "rgba(255, 50, 50, 0.4)";
+            context.shadowBlur = boxSize * 0.05;
             context.stroke();
 
-            // Optional: Add a soft instruction text inside the box
-            context.shadowBlur = 0; // Remove shadow for text
-            context.fillStyle = "rgba(255, 255, 255, 0.8)";
-            context.font = `bold ${Math.floor(boxSize * 0.1)}px Arial`;
+            // Remove shadow for text
+            context.shadowBlur = 0;
+
+            // Optional: Instruction text inside the box
+            context.fillStyle = "rgba(255, 255, 255, 0.9)";
+            context.font = `bold ${Math.floor(boxSize * 0.08)}px Arial`;
             context.textAlign = "center";
-            context.fillText("Place object here", width / 2, y - 15);
+            context.fillText("Place Object Here", videoWidth / 2, y - 15);
         };
+
 
         if (showGuideBox) {
             drawGuideBox();
