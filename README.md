@@ -1,6 +1,5 @@
-# Recycle-it 🌍
-
 ![Recycle-it Banner](https://github.com/matveho/recycle-it/blob/main/frontend/public/assets/Banner.png)
+# 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.0%2B-orange)
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-4B-red)
