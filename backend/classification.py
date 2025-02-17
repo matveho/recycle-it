@@ -1,166 +1,55 @@
 import numpy as np
-
-# import pandas as pd
 import tensorflow as tf
 from PIL import Image
-from matplotlib import pyplot as plt
-from tensorflow.python.util import compat
-from tensorflow.core.protobuf import saved_model_pb2
-from google.protobuf import text_format
-
-# import pprint
+from mrcnn import model as modellib, utils
+from mrcnn.config import Config
 import json
 import os
 
-from object_detection.utils import visualization_utils as vis_util
-from object_detection.utils import dataset_util, label_map_util
-from object_detection.protos import string_int_label_map_pb2
-
-DATA_DIR = ".\data"
-ANNOTATIONS_FILE = os.path.join(DATA_DIR, "annotations_train.json")
+DATA_DIR = "./data"
+ANNOTATIONS_FILE = os.path.join(DATA_DIR, "annotations.json")
 NCLASSES = 60
 
+class InferenceConfig(Config):
+    NAME = "object"
+    GPU_COUNT = 1
+    IMAGES_PER_GPU = 1
+    NUM_CLASSES = NCLASSES + 1  # Background + objects
 
-# reconstruct frozen graph
-def reconstruct(pb_path):
-    if not os.path.isfile(pb_path):
-        print("Error: %s not found" % pb_path)
-
-    print("Reconstructing Tensorflow model")
-    detection_graph = tf.Graph()
-    with detection_graph.as_default():
-        od_graph_def = tf.compat.v1.GraphDef()
-        with tf.io.gfile.GFile(pb_path, "rb") as fid:
-            serialized_graph = fid.read()
-            od_graph_def.ParseFromString(serialized_graph)
-            tf.import_graph_def(od_graph_def, name="")
-    print("Success!")
-    return detection_graph
-
-
-# visualize detection
-def image2np(image):
-    (w, h) = image.size
-    return np.array(image.getdata()).reshape((h, w, 3)).astype(np.uint8)
-
-
-def image2tensor(image):
-    npim = image2np(image)
-    return np.expand_dims(npim, axis=0)
-
-
-# %matplotlib inline
-def detect(detection_graph, category_index, img: Image, max_size=1024):
-    with detection_graph.as_default():
-        gpu_options = tf.compat.v1.GPUOptions(per_process_gpu_memory_fraction=0.01)
-        with tf.compat.v1.Session(
-            graph=detection_graph,
-            config=tf.compat.v1.ConfigProto(gpu_options=gpu_options),
-        ) as sess:
-            image_tensor = detection_graph.get_tensor_by_name("image_tensor:0")
-            detection_boxes = detection_graph.get_tensor_by_name("detection_boxes:0")
-            detection_scores = detection_graph.get_tensor_by_name("detection_scores:0")
-            detection_classes = detection_graph.get_tensor_by_name(
-                "detection_classes:0"
-            )
-            num_detections = detection_graph.get_tensor_by_name("num_detections:0")
-
-            # image = Image.open(test_image_path)
-            # image = image.resize((1200,1200),Image.LANCZOS)
-            # Resize image if larger than max_size while maintaining aspect ratio
-            if img.width > max_size or img.height > max_size:
-                width, height = img.size
-                if width > height:
-                    new_width = max_size
-                    new_height = int(height * (max_size / width))
-                else:
-                    new_height = max_size
-                    new_width = int(width * (max_size / height))
-                img = img.resize((new_width, new_height), Image.LANCZOS)
-            (boxes, scores, classes, num) = sess.run(
-                [detection_boxes, detection_scores, detection_classes, num_detections],
-                feed_dict={image_tensor: image2tensor(img)},
-            )
-
-            # npim = image2np(image)
-            # vis_util.visualize_boxes_and_labels_on_image_array(
-            #     npim,
-            #     np.squeeze(boxes),
-            #     np.squeeze(classes).astype(np.int32),
-            #     np.squeeze(scores),
-            #     category_index,
-            #     use_normalized_coordinates=True,
-            #     line_thickness=15,
-            # )
-            # plt.figure(figsize=(12, 8))
-            # plt.imshow(npim)
-            # plt.show()
-            # print(f"Classes: {classes}")
-            # print(f"Scores: {scores}")
-            return np.squeeze(classes).astype(np.int32), np.squeeze(scores)
-
-
-def model_setup():
+def load_class_mapping():
     with open(ANNOTATIONS_FILE) as json_file:
         data = json.load(json_file)
     categories = data["categories"]
+    return {int(category["id"]): category["name"] for category in categories}
 
-    print("Building label map from examples")
+class MaskRCNNClassifier:
+    def __init__(self, model_path):
+        self.config = InferenceConfig()
+        self.model = modellib.MaskRCNN(mode="inference", config=self.config, model_dir=model_path)
+        self.model.load_weights(model_path, by_name=True)
+        self.class_mapping = load_class_mapping()
 
-    labelmap = string_int_label_map_pb2.StringIntLabelMap()
-    for idx, category in enumerate(categories):
-        item = labelmap.item.add()
-        # label map id 0 is reserved for the background label
-        item.id = int(category["id"]) + 1
-        item.name = category["name"]
+    def image2np(self, image):
+        (w, h) = image.size
+        return np.array(image.getdata()).reshape((h, w, 3)).astype(np.uint8)
 
-    with open("./labelmap.pbtxt", "w") as f:
-        f.write(text_format.MessageToString(labelmap))
+    def classify(self, img):
+        np_img = self.image2np(img)
+        results = self.model.detect([np_img], verbose=0)
+        r = results[0]
+        if not r['class_ids'].any():
+            return ["No object detected!"]
+        top_class_id = r['class_ids'][0]
+        confidence = r['scores'][0]
+        class_name = self.class_mapping.get(top_class_id, "Unknown")
+        if confidence > 0.7:
+            return [f"This appears to be a {class_name}."]
+        elif confidence > 0.4:
+            return [f"This looks somewhat like a {class_name}, but it's not certain."]
+        else:
+            return [class_name for class_name in [self.class_mapping.get(cid, "Unknown") for cid in r['class_ids'][:3]]]
 
-    print("Label map witten to labelmap.pbtxt")
-
-    # with open('./labelmap.pbtxt') as f:
-    #     pprint.pprint(f.readlines())
-
-    label_map = label_map_util.load_labelmap("labelmap.pbtxt")
-    categories = label_map_util.convert_label_map_to_categories(
-        label_map, max_num_classes=NCLASSES, use_display_name=True
-    )
-    category_index = label_map_util.create_category_index(categories)
-
-    detection_graph = reconstruct(".\ssd_mobilenet\ssd_mobilenet_v2_taco_2018_03_29.pb")
-
-    return detection_graph, category_index
-
-
-def classify(detection_graph, category_index, img):
-    """"""
-    classes, scores = detect(detection_graph, category_index, img, max_size=1200)
-    # if scores[0] < 0.02:
-    #     return "No object detected!", 400
-
-    # if scores[1] < 0.05:
-    #     predicted_class = category_index[classes[0]]["name"]
-    #     predicted_score = scores[0]
-    #     return (
-    #         f"Predicted class: {predicted_class}, Predicted score: {predicted_score}",
-    #         200,
-    #     )
-    # else:
-    #     predicted_classes = [category_index[c]["name"] for c in classes[0:3]]
-    #     predicted_scores = scores[0:3]
-    #     return (
-    #         f"Predicted classes: {predicted_classes}, Predicted scores: {predicted_scores}",
-    #         200,
-    #     )
-    index = classes[0]
-    if scores[0] > 0.7:
-        return [f"This appears to be a {category_index[index]['name']}."]
-    elif scores[0] > 0.4:
-        return [
-            f"This looks somewhat like a {category_index[index]['name']}, but it's not certain."
-        ]
-    elif scores[0] < 0.02:
-        return ["No object detected!"]
-    else:
-        return [category_index[c]["name"] for c in classes[0:3]]
+# Example usage
+# classifier = MaskRCNNClassifier("path/to/mask_rcnn_weights.h5")
+# result = classifier.classify(Image.open("test.jpg"))
+# print(result)
