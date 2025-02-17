@@ -26,7 +26,7 @@ class MaskRCNNClassifier:
     def __init__(self, model_path):
         self.config = InferenceConfig()
         self.model = modellib.MaskRCNN(mode="inference", config=self.config, model_dir=model_path)
-        self.model.load_weights(model_path, by_name=True)
+        self.model.load_weights("weights.h5", by_name=True)
         self.class_mapping = load_class_mapping()
 
     def image2np(self, image):
