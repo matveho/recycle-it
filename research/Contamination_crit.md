@@ -59,7 +59,7 @@ Contamination Factors:
         N/A
         May be disregarded!
 
-##   Wrong Plastics
+##      Wrong Plastics
         Must be checked with the municipal recyc. program
 
         #1 PET & #2 HDPE - Uncontaminated are Always Recycled
