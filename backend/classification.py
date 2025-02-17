@@ -153,11 +153,12 @@ def classify(detection_graph, category_index, img):
     #         f"Predicted classes: {predicted_classes}, Predicted scores: {predicted_scores}",
     #         200,
     #     )
+    index = classes[0]
     if scores[0] > 0.7:
-        return [f"This appears to be a {category_index[classes[0]]["name"]}."]
+        return [f"This appears to be a {category_index[index]['name']}."]
     elif scores[0] > 0.4:
         return [
-            f"This looks somewhat like a {category_index[classes[0]]["name"]}, but it's not certain."
+            f"This looks somewhat like a {category_index[index]['name']}, but it's not certain."
         ]
     elif scores[0] < 0.02:
         return ["No object detected!"]
