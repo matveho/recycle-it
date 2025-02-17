@@ -1,6 +1,6 @@
 # Recycle-it 🌍
 
-![Recycle-it Banner](https://example.com/path/to/banner.png)
+![Recycle-it Banner](https://github.com/matveho/recycle-it/blob/main/frontend/public/assets/Banner.png)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.0%2B-orange)
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-4B-red)
@@ -26,9 +26,6 @@ Imagine a world where recycling is effortless, waste is minimized, and every ste
   - Classifies recyclable materials and identifies lead contamination.
 - **User-Friendly Frontend:**
   - Minimal user input for accessibility.
-
-## How It Was Built 🛠️
-![System Architecture](https://example.com/path/to/architecture.png)
 
 **Hardware Frameworks:**
 - Ultrasonic Sensors
