@@ -21,7 +21,9 @@ def upload_file():
     image = Image.open(io.BytesIO(file.read())).convert("RGB")
 
     # detected_objects = detect_objects(image)
-    if detected_objects and category_index:
+    detected_objects = []
+
+    if detection_graph and category_index:
         detected_objects = classification.classify(
             detection_graph, category_index, image
         )

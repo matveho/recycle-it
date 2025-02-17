@@ -135,7 +135,7 @@ def model_setup():
 
 def classify(detection_graph, category_index, img):
     """"""
-    classes, scores = detect(detection_graph, img, max_size=1200)
+    classes, scores = detect(detection_graph, category_index, img, max_size=1200)
     # if scores[0] < 0.02:
     #     return "No object detected!", 400
 
