@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="122e18bd-8447-4882-a0f5-d81793afd857" name="Changes" comment="Remove header and">
+    <list default="true" id="122e18bd-8447-4882-a0f5-d81793afd857" name="Changes" comment="autosnap every 10s">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/MainContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/MainContent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +41,12 @@
     &quot;assignee&quot;: &quot;matveho&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/matveho/recycle-it.git",
-    "accountId": "9155b09e-3227-4f52-8053-406b1dbde28e"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/matveho/recycle-it.git&quot;,
+    &quot;accountId&quot;: &quot;9155b09e-3227-4f52-8053-406b1dbde28e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -152,6 +154,8 @@
       <workItem from="1739680702664" duration="625000" />
       <workItem from="1739683236173" duration="2869000" />
       <workItem from="1739740159368" duration="4647000" />
+      <workItem from="1739754449309" duration="675000" />
+      <workItem from="1739813000875" duration="1041000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup">
       <option name="closed" value="true" />
@@ -361,7 +365,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739743745517</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="autosnap every 10s">
+      <option name="closed" value="true" />
+      <created>1739754528483</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1739754528483</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,7 +394,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Project Default" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Add header and sections" />
     <MESSAGE value="Add designs" />
     <MESSAGE value="oops I built the site without committing for two days" />
     <MESSAGE value="refactor to components&#10;fix mobile compatability issues&#10;add on-view animations" />
@@ -407,6 +418,7 @@
     <MESSAGE value="Update to HTTPS" />
     <MESSAGE value="Update to new domain" />
     <MESSAGE value="Handle description" />
-    <option name="LAST_COMMIT_MESSAGE" value="Handle description" />
+    <MESSAGE value="autosnap every 10s" />
+    <option name="LAST_COMMIT_MESSAGE" value="autosnap every 10s" />
   </component>
 </project>
