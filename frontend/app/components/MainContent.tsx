@@ -85,6 +85,15 @@ const MainContent: React.FC = () => {
         }, "image/jpeg");
     };
 
+    // Automatically capture and send a photo every 10 seconds
+    useEffect(() => {
+        const interval = setInterval(() => {
+            captureImage();
+        }, 10000); // 10 seconds interval
+
+        return () => clearInterval(interval); // Cleanup on unmount
+    }, []);
+
     useEffect(() => {
         if (!canvasRef.current) return;
         const canvas = canvasRef.current;
